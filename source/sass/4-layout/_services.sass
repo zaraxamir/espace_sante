@@ -1,0 +1,35 @@
+#services
+  background:#f9f9f9
+  text-align: center
+
+  position: relative
+  &:after
+    bottom: 0
+    position: absolute
+    background: inherit
+    content: ""
+    height: 100%
+    left: 0
+    right: 0
+    transform: skewY(-10deg)
+    z-index: -1
+
+  h2
+    margin: 80px 0
+
+.cards
+  display: grid
+  grid-template-columns: repeat(3, 33%)
+  grid-gap: 30px
+
+.service-card
+  background: white
+  padding: 20px
+  border-radius: 4px
+
+.therapist
+  border-top: 3px solid $aqua
+.schedule
+  border-top: 3px solid $ocean
+.rent
+  border-top: 3px solid $olive
