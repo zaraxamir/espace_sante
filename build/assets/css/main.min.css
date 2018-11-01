@@ -330,7 +330,8 @@ hr {
 #services {
   background: #f9f9f9;
   text-align: center;
-  position: relative; }
+  position: relative;
+  height: 500px; }
   #services:after {
     bottom: 0;
     position: absolute;
@@ -340,28 +341,31 @@ hr {
     left: 0;
     right: 0;
     transform: skewY(-10deg);
+    transform-origin: 100%;
     z-index: -1; }
   #services h2 {
     margin: 80px 0; }
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, 33%);
+  grid-template-columns: repeat(3, auto);
   grid-gap: 30px; }
 
 .service-card {
   background: white;
-  padding: 20px;
-  border-radius: 4px; }
+  padding: 30px 40px 10px 40px;
+  box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2); }
+  .service-card h3 {
+    margin: 10px 0 0; }
 
 .therapist {
-  border-top: 3px solid #7FDBFF; }
+  border-top: 4px solid #7FDBFF; }
 
 .schedule {
-  border-top: 3px solid #00adff; }
+  border-top: 4px solid #00adff; }
 
 .rent {
-  border-top: 3px solid #3D9970; }
+  border-top: 4px solid #3D9970; }
 
 #renters {
   text-align: center; }
